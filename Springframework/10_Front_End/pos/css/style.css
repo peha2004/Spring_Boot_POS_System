@@ -1,0 +1,193 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 700;
+    color: #0d47a1;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top-nav {
+    background: linear-gradient(90deg, #1565c0, #1e88e5);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.top-nav a:hover {
+    transform: scale(1.05);
+    color: #bbdefb;
+}
+
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    background: white;
+}
+
+input, select {
+    border-radius: 10px !important;
+    border: 1px solid #bbdefb !important;
+    padding: 10px !important;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #1e88e5 !important;
+    box-shadow: 0 0 5px rgba(30,136,229,0.5) !important;
+}
+
+.btn {
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #1e88e5;
+    border: none;
+}
+
+.btn-success {
+    background: #43a047;
+    border: none;
+}
+
+.btn-danger {
+    background: #e53935;
+    border: none;
+}
+
+.btn-secondary {
+    background: #546e7a;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+thead {
+    background: #1565c0;
+    color: white;
+}
+
+tbody tr:hover {
+    background: #e3f2fd;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+#orderTotal {
+    color: #1565c0;
+    font-weight: 700;
+}
+
+
+hr {
+    border-top: 1px solid #bbdefb;
+}
+
+label {
+    font-weight: 500;
+    color: #0d47a1;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h6 {
+    color: #546e7a;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.dashboard-card h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1565c0;
+}
+
+.dashboard-card.highlight {
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    color: white;
+}
+
+.dashboard-card.highlight h2,
+.dashboard-card.highlight h6 {
+    color: white;
+}
+
+
+.chart-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.chart-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    height: 350px;
+}
+
+#salesChart {
+    max-height: 250px;
+}
+
+
+.dashboard-header h1 {
+    color: #0d47a1;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+.page-title {
+    color: #1565c0 !important;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}

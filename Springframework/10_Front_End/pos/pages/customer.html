@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=../css/style.css>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Customer Management</h1>
+</div>
+
+<div class="container p-3">
+    <input type="text" id="customerId" placeholder="Customer Id" readonly>
+    <input type="text" id="customerName" placeholder="Customer Name">
+    <input type="text" id="customerAddress" placeholder="Customer Address">
+</div>
+
+<div class="container p-3">
+    <button id="addCustomer" class="btn btn-primary" onclick="saveCustomer()">Add Customer</button>
+    <button id="updateCustomer" class="btn btn-secondary">Update Customer</button>
+    <button id="deleteCustomer" class="btn btn-danger">Delete Customer</button>
+</div>
+
+<div class="container p-3">
+    <table id="customerTable" class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+
+    </table>
+</div>
+<script src="../js/customer.js"></script>
+</body>
+</html>

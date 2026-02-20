@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container">
+    <h1 class="page-title">Item Management</h1>
+</div>
+
+<div class="container p-3">
+    <input type="text" id="itemCode" placeholder="Item Code">
+    <input type="text" id="description" placeholder="Description">
+    <input type="number" id="unitPrice" placeholder="Unit Price">
+    <input type="number" id="qty" placeholder="Quantity">
+</div>
+
+<div class="container p-3">
+    <button class="btn btn-primary" onclick="saveItem()">Add</button>
+    <button id="updateItem" class="btn btn-secondary">Update</button>
+    <button id="deleteItem" class="btn btn-danger">Delete</button>
+</div>
+
+<div class="container p-3">
+    <table id="itemTable" class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Code</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Qty</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/item.js"></script>
+</body>
+</html>

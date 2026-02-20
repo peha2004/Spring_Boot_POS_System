@@ -1,0 +1,89 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Place Order</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+    <div class="container mt-3">
+        <div class="card p-3">
+            <h5>Place Order</h5>
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+                    <div class="mb-2">
+                        <label>Order ID</label>
+                        <input id="orderId" class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                        <label>Date</label>
+                        <input id="date" type="date" class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                        <label>Customer</label>
+                        <select id="orderCustomer" class="form-control"></select>
+                    </div>
+
+                    <hr>
+
+                    <div class="mb-2">
+                        <label>Item</label>
+                        <select id="orderItem" class="form-control"></select>
+                    </div>
+
+                    <div class="mb-2">
+                        <label>Quantity</label>
+                        <input id="orderQty" type="number" value="1" class="form-control">
+                    </div>
+
+                    <button id="btnAddToCart" class="btn btn-primary w-100">
+                        Add To Cart
+                    </button>
+                </div>
+
+
+
+                <div class="col-md-8">
+                    <h6>Cart</h6>
+
+                    <table class="table table-hover">
+                        <thead >
+                        <tr>
+                            <th>Item</th>
+                            <th>Qty</th>
+                            <th>Unit</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody id="cartTable"></tbody>
+                    </table>
+
+                    <div class="d-flex justify-content-end">
+                        <h5>Total : <span id="orderTotal">0.00</span></h5>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-2">
+                        <button id="btnPlaceOrder" class="btn btn-success">
+                            Place Order
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/order.js"></script>
+
+    </body>
+    </html>

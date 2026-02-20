@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS SYSTEM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard-header">
+    <h1>POS SYSTEM DASHBOARD</h1>
+</div>
+
+<div class="top-nav">
+    <a href="pages/customer.html">Customer</a>
+    <a href="pages/item.html">Item</a>
+    <a href="pages/place-order.html">Order</a>
+    <a href="pages/order-history.html">Order History</a>
+</div>
+
+<div class="container mt-5">
+
+
+    <div class="row text-center mb-4">
+
+        <div class="col-md-4">
+            <div class="dashboard-card">
+                <h6>Total Customers</h6>
+                <h2 id="customerCount">0</h2>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="dashboard-card">
+                <h6>Total Items</h6>
+                <h2 id="itemCount">0</h2>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="dashboard-card highlight">
+                <h6>Total Earnings</h6>
+                <h2>Rs. <span id="totalEarnings">0.00</span></h2>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="chart-card p-4">
+        <h5 class="text-center mb-4">Sales Overview</h5>
+        <canvas id="salesChart"></canvas>
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
